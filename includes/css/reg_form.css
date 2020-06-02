@@ -1,0 +1,17 @@
+#back{
+	border: 1px solid;
+	width: 560px;
+	margin-top: 5px;
+	background-color: #ecf2f5;
+}
+
+.container{
+	border: 1px solid;
+	width: 450px;
+	margin-top: auto;
+	background-color: #ecf2f5;
+}
+
+.bg{
+		background-color: #ecf2f5;
+}
