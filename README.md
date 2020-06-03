@@ -2,8 +2,6 @@
 ## Problem Definition
 Design a database for online book re-selling portal to buy or sell second hand books and get recommendations of books for a particular subject.
 
-This software is designed specifically for the use of college students
-
 User can be of two types - 
 - Administrator
 - Customer

@@ -36,6 +36,7 @@
 
 				<?php
 					$query = "SELECT * from books";
+
 					$query_result = mysqli_query($connection,$query);
 
 					if(!$query_result){
@@ -65,9 +66,17 @@
 							</tr>
 				<?php
 						}
+
 					}
+
 				?>
 			</tbody>						
 		</table>
 	</div>	
 </div>	
+
+
+<!-- SELECT * FROM `books` ORDER BY `books`.`date` DESC
+SELECT * FROM `books` ORDER BY `books`.`username` ASC
+SELECT * FROM `books` ORDER BY `books`.`book_name` ASC
+ -->

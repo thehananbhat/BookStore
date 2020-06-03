@@ -34,7 +34,7 @@
 			<thead>
 				<tr>
 					<th class="text-center" onclick="sortTable(0)">BookId</th>
-					<th class="text-center" onclick="sortTable(1)">Username</th>
+					<th class="text-center" onclick="sortTable(1)>Username</th>
 					<th class="text-center" onclick="sortTable(2)">BookName</th>
 					<th class="text-center" onclick="sortTable(3)">Ratings</th>
 					<th class="text-center" onclick="sortTable(4)">Review</th>

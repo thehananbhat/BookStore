@@ -45,7 +45,7 @@
 		</div>
 	</div>
 </div>
-
+<?php include "templates/admin-footer.php"; ?>
 <?php 
     }else{
 		header("Location: ../index.php");

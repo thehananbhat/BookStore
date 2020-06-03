@@ -6,7 +6,6 @@
 		$a=0;
 		$prepare_stmt = $connection->prepare("INSERT INTO categories(category_name,parent_category_id) VALUES(?,?)");
 		$prepare_stmt->bind_param("si",$category_name,$a);
-		
 		if(!$prepare_stmt->execute()){
 			die("QUERY FAILED ".mysqli_error($connection));
 			$prepare_stmt->close();

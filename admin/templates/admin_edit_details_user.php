@@ -33,6 +33,7 @@
     }
 ?>
 
+
 <!--View User details-->
 <?php  
     if(isset($_GET['edit'])){
@@ -64,13 +65,13 @@
                 $contactNo = $contact_row['contact_no'];  
         }
 
-    } 
+    }
+	 
 ?>
-
 <?php 
     if(isset($_SESSION['passwd_changed'])){
         echo '<div class="alert alert-success alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Success!</strong> Password Changed Successfully!!!
+                <strong>Success!</strong> Password Changed!!!
               </div>';
         $_SESSION['passwd_changed'] = null;
     }
@@ -87,6 +88,13 @@
                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                         <input type="Email" class="form-control" id="email" value="<?php echo $username?>" placeholder="Email ID" disabled> 
                     </div>
+                    <!--
+                    <label for="passwd">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="Password" class="form-control" id="passwd" value="<?php //echo $password?>" placeholder="Password" disabled> 
+                    </div>
+                    -->
                     <div class="row">
                         <div class="col-sm-4">
                             <label for="fname">First Name</label>
@@ -182,7 +190,7 @@
                 <label for="oldPasswd">Old Password</label>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input id="oldPasswd" type="password" class="control" name="oldPasswd" placeholder="Old Password">
+                    <input id="oldPasswd" type="password" class="form-control" name="oldPasswd" placeholder="Old Password">
                 </div>                     
               </div>
 
@@ -203,8 +211,9 @@
               </div>
 
               <div class="form-group">
-                <input type="submit" class="btn btn-default" value="Change" name="submit_passwd" style="margin-bottom: 10px;">              
+                <input type="submit" class="btn btn-default" value="Change" name="submit_passwd" style="margin-bottom: 10px;">                
               </div>
+
             </form>   
         </div>
         <div class="modal-footer" style="margin-right: 10px;">

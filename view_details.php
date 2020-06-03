@@ -46,6 +46,13 @@
                         <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                         <input type="Email" class="form-control" id="email" value="<?php echo $username?>" placeholder="Email ID" disabled> 
                     </div>
+                    <!--
+                    <label for="passwd">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="Password" class="form-control" id="passwd" value="<?php echo $password?>" placeholder="Password" disabled> 
+                    </div>
+                    -->
                     <div class="row">
                         <div class="col-sm-4">
                             <label for="fname">First Name</label>

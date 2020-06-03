@@ -1,4 +1,3 @@
-
 <script>
 	$(document).ready(function() {
 	    $('#usersTable').DataTable();

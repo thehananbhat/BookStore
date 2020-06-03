@@ -6,6 +6,7 @@
         
     }
 ?>
+
 <?php
     if(isset($_GET["search"])){
         $search_index = $_GET["search"];
@@ -16,8 +17,12 @@
 <div id="wrapper">
 <?php include "./templates/navigation.php"; ?>
 <div class= "container close_bookmark_sidebar" id="page-content-wrapper" style="margin: 0px; padding: 0px">
+<!--<div class="container-fluid row" style=" background-image:url('includes/images/image1.jpg'); background-repeat: no-repeat; background-size:100% 100%; height: 400px;">-->
 
 <p align="center" style="color: white; font-size: 30px;font-family: fantasy;">Buy and Sell Books Online</p>
+
+
+
 </div>
 <br>
 <div class="container close_bookmark_sidebar" id='container'>

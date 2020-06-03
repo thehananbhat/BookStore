@@ -1,17 +1,13 @@
 <?php include "./templates/admin-header.php"; ?>
 <?php if(isset($_SESSION['username'])&&isset($_SESSION['user_role'])&&$_SESSION['user_role']=='admin'){  ?>
-
-  <?php
+<?php
     if(isset($_POST['submit_passwd'])){
         $username = $_POST['username'];
         $oldPassword = $_POST['oldPasswd'];
         $newPassword = $_POST['newPasswd'];
-        $comfirmPassword = $_POST['comfirmPasswd'];
 
         $oldPassword = mysqli_real_escape_string($connection,$oldPassword);
         $newPassword = mysqli_real_escape_string($connection,$newPassword);
-        $confirmPassword = mysqli_real_escape_string($connection, $confirmPassword);
-
         $hash_password = password_hash($newPassword, PASSWORD_DEFAULT);
 
         $query = "SELECT password FROM users WHERE username='".addslashes($_POST['username'])."'";
@@ -23,19 +19,18 @@
           if(!$prepare_stmt->execute()){
               die("QUERY FAILED ".mysqli_error($connection));
               $prepare_stmt->close();
-          }
-          else{
+          }else{
               $_SESSION['passwd_changed'] = 'true';
               $prepare_stmt->close();
-              echo "<script> window.location.href = 'users.php?source=edit_user&edit=$username';
+              echo "<script>
+                window.location.href = 'users.php?source=edit_user&edit=$username';
               </script>";
           }
-        }
-        else{
+        }else{
             echo "<script>
               window.location.href = 'users.php?source=edit_user&edit=$username';
               window.alert('Old password did not match')</script>";
         }
     }
 ?>
-<?php }?>
+<?php } ?>
