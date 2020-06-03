@@ -1,10 +1,10 @@
 # Online-Books-Reselling-Portal
-## Problem Definition
+### Problem Definition
 Design a database for online book re-selling portal to buy or sell second hand books and get recommendations of books for a particular subject.
 
 User can be of two types - 
-- Administrator
-- Customer
+ * Administrator: One who maintains the website
+ * Customer: Can buy/sell books
 
 The administrator controls the database, remove fake books, remove customers for improper behavior, etc.
 
@@ -18,4 +18,5 @@ Customer can buy or sell books to other customers by communicating with each oth
 
 Customer can also rent a book for particular duration.
 
+#### The software is designed specifically for college students
 Main users will be the students where they can buy second hand books or rent some books for a semester.
