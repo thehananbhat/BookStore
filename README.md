@@ -4,7 +4,7 @@ Design a database for online book re-selling portal to buy or sell second hand b
 
 User can be of two types - 
  * Administrator: One who maintains the website
- * Customer: Can buy/sell books
+ * Customer: Can buy or sell books
 
 The administrator controls the database, remove fake books, remove customers for improper behavior, etc.
 
