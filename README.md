@@ -20,3 +20,5 @@ Customer can also rent a book for particular duration.
 
 #### The software is designed specifically for college students
 Main users will be the students where they can buy second hand books or rent some books for a semester.
+
+[![Mohammad Hanan Bhat's DEV Profile](https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg)](https://dev.to/thehananbhat)
